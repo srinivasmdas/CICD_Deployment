@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+
+  - name: building docker image
+    command: docker build -t cicd-image .
+    args:
+      chdir: /opt/docker
+
+  - name: creating docker image using docker command
+    command: docker run -d --name cicd-container -p 8080:8080 cicd-image
+	
