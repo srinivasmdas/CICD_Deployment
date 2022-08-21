@@ -23,10 +23,13 @@ STEP 2: Install Ansible plugins in Jenkins CI server - DONE
           
 STEP 3: Prepare Ansible playbook to run Maven build on Jenkins CI server
         
+    3a. Create docker image
+    3b. copy image to docker hub
+    3c. Jenkins job to build an image onto ansible
+ 
 
-
-Prepare Ansible playbook to execute deployment steps on the remote web container with restart of the web container post deployment
-
+STEP 4: Prepare Ansible playbook to execute deployment steps on the remote web container with restart of the web container post deployment
+    4a.   deploy Image using Ansible Playbook
 
 
 
